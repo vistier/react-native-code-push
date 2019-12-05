@@ -1,3 +1,13 @@
+# 该分支修复了
+aes_encrypt_key128
+aes_decrypt_key128
+与其他库冲突
+已知的冲突库
+```
+AMap3DMap冲突 报错duplicatesymbol _aes_encrypt_key128
+```
+
+
 # React Native Module for CodePush
 
 *Note: This README is only relevant to the latest version of our plugin. If you are using an older version, please switch to the relevant tag on [our GitHub repo](https://github.com/Microsoft/react-native-code-push) to view the docs for that particular version.*
