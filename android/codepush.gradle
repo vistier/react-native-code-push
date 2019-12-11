@@ -79,6 +79,9 @@ gradle.projectsEvaluated {
             def generateBundledResourcesHash = tasks.create(
                     name: "generateBundledResourcesHash${targetName}",
                     type: Exec) {
+                doFirst {
+                    jsBundleDir.mkdirs()
+                }
                 commandLine (*nodeExecutableAndArgs, "${nodeModulesPath}/react-native-code-push/scripts/generateBundledResourcesHash.js", resourcesDir, "$jsBundleDir/$bundleAssetName", jsBundleDir, resourcesMapTempFileName)
             }
 
